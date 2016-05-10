@@ -7,11 +7,15 @@
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
+  <link href="styles/toggle.css" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
   <!-- endbuild -->
 </head>
 <body>
-hello world
+<div class="switch">
+  <input id="important_only" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
+  <label for="important_only" data-on="只显示重要" data-off="显示全部"></label>
+</div>
 <!-- build:js scripts/popup-vendor.js -->
 <!-- bower:js -->
 <!-- endbower -->

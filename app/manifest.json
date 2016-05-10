@@ -20,12 +20,13 @@
     "storage",
     "notifications"
   ],
-  "page_action": {
+  "browser_action": {
     "default_icon": {
       "19": "images/icon-19.png",
       "38": "images/icon-38.png"
     },
-    "default_title": "finance",
-    "default_popup": "index.html"
-  }
+    //    "default_popup": "popup.html",
+    "default_title": "finance"
+  },
+  "options_page": "options.html"
 }
