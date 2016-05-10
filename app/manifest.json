@@ -1,0 +1,31 @@
+{
+  "name": "Finance",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "description": "get latest finance message for you",
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "scripts/socket.io.js",
+      "scripts/lru.js",
+      "scripts/chromereload.js",
+      "scripts/background.js"
+    ]
+  },
+  "permissions": [
+    "storage",
+    "notifications"
+  ],
+  "page_action": {
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
+    },
+    "default_title": "finance",
+    "default_popup": "index.html"
+  }
+}
