@@ -11,10 +11,11 @@ chrome.storage.local.get('setting', value=> {
 
 chrome.notifications.onClicked.addListener(newsId=> {
   let info = cache.get(newsId);
+  let url = info.columnType === 1 ?
+    `http://news.fx678.com/C/${newsId.substr(0, 8)}/${newsId}.shtml` :
+    'http://kx.fx678.com/';
   if (info.columnType === 1) {
-    chrome.tabs.create({
-      url: `http://news.fx678.com/C/${newsId.substr(0, 8)}/${newsId}.shtml`
-    });
+    chrome.tabs.create({url});
   }
   chrome.notifications.clear(newsId);
 });
